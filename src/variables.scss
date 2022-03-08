@@ -1,0 +1,25 @@
+// global variables file
+
+
+// Colors
+$purple: #FF00FF;
+
+$gray-light: #A0A0A0;
+$gray-medium: #787878;
+$gray-dark: #505050;
+
+@mixin font-med {
+  font-family: 'League Spartan', sans-serif;
+  font-size: 16px;
+}
+
+
+$position-values: (
+  0: 0,
+  50: 50%,
+  100: 100%
+);
+
+* {
+  @include font-med;
+}

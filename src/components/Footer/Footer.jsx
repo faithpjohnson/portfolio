@@ -1,11 +1,20 @@
 import React from 'react'
+import './footer.scss'
 
 export default function Footer () {
   return (
-    <div className='footer container'>
-      <a href='#'>Faithpjohnson@gmail.com</a>
-      <a href='#'>GitHub</a>
-      <a href='#'>LinkedIn</a>
+    <div id="footer">
+      <div className='footer container'>
+        <a id='contact' href='mailto:faithpjohnson@gmail.com?subject=MessageToFaith' target='_blank'>
+          Email Me!
+        </a>
+        <a id='contact' href='#'>
+          GitHub
+        </a>
+        <a id='contact' href='#'>
+          LinkedIn
+        </a>
+      </div>
     </div>
   )
 }

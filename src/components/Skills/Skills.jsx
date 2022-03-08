@@ -1,9 +1,14 @@
 import React from 'react'
+import './skills.scss'
 
 export default function Skills () {
   return (
     <>
-      <h4>Skills</h4>
+      <div id="skills">
+        <div class='skills container' id='skills'>
+          <h5>Skills</h5>
+        </div>
+      </div>
     </>
   )
 }

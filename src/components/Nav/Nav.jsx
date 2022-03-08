@@ -9,7 +9,7 @@ export default function Nav () {
       <div class='container-fluid'>
         <div class='mx-auto order-0'>
           <a class='navbar-brand mx-auto' href='#'>
-            Faith P Jawnson
+            Faith P Johnson
           </a>
           <button
             class='navbar-toggler'

@@ -3,31 +3,36 @@ import './ZRow.scss'
 
 // export default function ({ title, description, siteLink, repoLink }) {
 export default function ZRow ({ project, imageAlign }) {
-  function calculateImageClass () {
+  function calculateImageClass (classes) {
     if (imageAlign === 'right') {
-      return 'order-3'
+      return `${classes} order-last`
     }
 
-    return 'order-1'
+    return `${classes} order-first`
   }
 
   return (
-    <>
-      <div className='projects'>
-        <div className='order-2'>
-          <h3 className='description'>{project.title}</h3>
-          <p className='description'>{project.description}</p>
+    <div className='project container row'>
+      <div className='content-column col'>
+        <h3 className='title'>{project.title}</h3>
+        <p className='description'>{project.description}</p>
+        <p>{imageAlign}</p>
 
-          <a href={project.deployLink} target='_blank' class='btn btn-primary project'>
-            View {project.title}
-          </a>
-          <a href={project.githubLink} target='_blank' class='btn btn-primary'>
-            View GitHub Repo
-          </a>
-        </div>
-
-        <div className={calculateImageClass()}>Image</div>
+        <a
+          href={project.deployLink}
+          target='_blank'
+          class='btn btn-primary project'
+        >
+          View {project.title}
+        </a>
+        <a href={project.githubLink} target='_blank' class='btn btn-primary'>
+          View GitHub Repo
+        </a>
       </div>
-    </>
+
+      <div className={calculateImageClass('col')}>
+        <h1>Image</h1>
+      </div>
+    </div>
   )
 }

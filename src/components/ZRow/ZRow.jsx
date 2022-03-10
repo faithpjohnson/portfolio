@@ -31,7 +31,7 @@ export default function ZRow ({ project, imageAlign }) {
       </div>
 
       <div className={calculateImageClass('col')}>
-        <h1>Image</h1>
+        <img src={project.imageSource} width="500" height="300" />
       </div>
     </div>
   )

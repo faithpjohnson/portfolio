@@ -5,9 +5,13 @@ export default function About () {
   return (
     <>
       <div id="about">
-        <div className='about container'>
+        <div className='about container row'>
+          <div class='col'>
           <h5>About</h5>
           <h4>Who is Faith?</h4>
+          <img src="https://i.imgur.com/Fyz6VIy.png"/>
+          </div>
+          <div class='col'>
           <p>
             My passion for web development was sparked when I participated in
             the process of building a website. I decided it was time to start my
@@ -19,6 +23,7 @@ export default function About () {
             applications.
           </p>
           <a href='mailto:faithpjohnson@gmail.com?subject=MessageToFaith' target='_blank'>Get in touch</a>
+        </div>
         </div>
       </div>
     </>

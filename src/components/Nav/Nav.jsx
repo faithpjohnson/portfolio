@@ -6,7 +6,7 @@ import './nav.scss'
 
 export default function Nav () {
   return (
-    <nav class='navbar sticky-top navbar-expand-md navbar-dark bg-dark'>
+    <nav class='navbar sticky-top navbar-expand-md '>
       <div class='container-fluid'>
         <div class='mx-auto order-0'>
           <a class='navbar-brand mx-auto' href='#'>

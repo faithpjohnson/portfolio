@@ -1,4 +1,22 @@
+@import '../../variables.scss';
 
-.btn {
-    margin: 20px;
+
+
+a.btn.btn-default {
+    background-color: #A1EACD;
+    margin: 10px;
+    font-size: 15px;
+}
+
+.content-column {
+    padding-top: 65px;
+}
+
+#project-img {
+    padding-top: 50px;
+}
+
+.title {
+    color: #EEB4AA;
+    font-family: 'Arvo', serif;
 }

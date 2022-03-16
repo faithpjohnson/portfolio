@@ -16,21 +16,21 @@ export default function ZRow ({ project, imageAlign }) {
       <div className='content-column col'>
         <h3 className='title'>{project.title}</h3>
         <p className='description'>{project.description}</p>
-        <p>{imageAlign}</p>
+        
 
         <a
           href={project.deployLink}
           target='_blank'
-          class='btn btn-primary project'
+          class='btn btn-default project'
         >
           View {project.title}
         </a>
-        <a href={project.githubLink} target='_blank' class='btn btn-primary'>
+        <a href={project.githubLink} target='_blank' class='btn btn-default' type='button'>
           View GitHub Repo
         </a>
       </div>
 
-      <div className={calculateImageClass('col')}>
+      <div className={calculateImageClass('col')} id="project-img">
         <img src={project.imageSource} width="500" height="300" />
       </div>
     </div>

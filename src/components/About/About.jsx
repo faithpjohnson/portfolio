@@ -3,17 +3,18 @@ import './About.scss'
 
 export default function About () {
   return (
-    <>
+    
       <div id="about">
         <div className='about container row'>
-          <div class='col'>
-          <h5>About</h5>
+          <div class='col headshot'>
+          <h5 class='section-header about-title'>ABOUT</h5>
           <h4>Who is Faith?</h4>
-          <img src="https://i.imgur.com/Fyz6VIy.png"/>
+          <img class='profile-pic' src="https://i.imgur.com/6dzYup4.jpg"/>
           </div>
           <div class='col'>
-          <p>
-            My passion for web development was sparked when I participated in
+            <h4 class='headline'>I'm an eager Junior Developer looking to grow my skills!</h4>
+          <p class='about-info'>
+            My curiosity for web development was sparked when I participated in
             the process of building a website. I decided it was time to start my
             coding journey. I then completed a Software Engineering program at
             General Assembly where I was able to refine my problem solving
@@ -22,10 +23,10 @@ export default function About () {
             passionate about using innovative technologies to craft quality web
             applications.
           </p>
-          <a href='mailto:faithpjohnson@gmail.com?subject=MessageToFaith' target='_blank'>Get in touch</a>
+          <a href='mailto:faithpjohnson@gmail.com?subject=MessageToFaith' target='_blank' class='btn'>Get in touch</a>
         </div>
         </div>
       </div>
-    </>
+    
   )
 }

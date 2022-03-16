@@ -1,12 +1,15 @@
 @import '../../variables.scss';
 
 #footer {
-    background-color: $aqua;
+    background-color: #546E7A;
+    color: white;
     text-align: center;
-    padding: 30px;
+    padding: 20px 0 5px 0;
 }
 
 #contact {
     margin: 30px;
     text-decoration: none;
 }
+
+

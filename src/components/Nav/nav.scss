@@ -1,7 +1,13 @@
 @import '../../variables.scss';
 
-// .navbar {
-//     a {
-//         background-color: $purple;
-//     }
-// }
+.navbar {
+    background-color: #3B5EED;
+}
+
+a.nav-link {
+    color: white;
+}
+
+a.navbar-brand {
+    color: white;
+}

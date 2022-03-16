@@ -16,6 +16,7 @@ export default function ZRow ({ project, imageAlign }) {
       <div className='content-column col'>
         <h3 className='title'>{project.title}</h3>
         <p className='description'>{project.description}</p>
+        <p className='techstack'>{project.techstack}</p>
         
 
         <a

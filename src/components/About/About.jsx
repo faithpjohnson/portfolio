@@ -4,17 +4,17 @@ import './About.scss'
 export default function About () {
   return (
     <div id='about'>
-      <div className='about container row'>
-        <div class='col headshot'>
-          <h5 class='section-header about-title'>ABOUT</h5>
+      <div className='about container row py-5'>
+        <div className='col-md-6 headshot'>
+          <h5 className='section-header about-title'>ABOUT</h5>
           <h4>Who is Faith?</h4>
-          <img class='profile-pic' src='https://i.imgur.com/6dzYup4.jpg' />
+          <img className='profile-pic' src='https://i.imgur.com/6dzYup4.jpg' />
         </div>
-        <div class='col'>
-          <h4 class='headline'>
+        <div className='col-md-6'>
+          <h4 className='headline'>
             I'm an eager Junior Developer looking to grow my skills!
           </h4>
-          <p class='about-info'>
+          <p className='about-info'>
             My coding journey began with a course at{' '}
             <a href='https://www.shecodes.io/' target='_blank'>
               SheCodes
@@ -48,7 +48,7 @@ export default function About () {
           <a
             href='mailto:faithpjohnson@gmail.com?subject=MessageToFaith'
             target='_blank'
-            class='btn'
+            className='btn'
           >
             Get in touch
           </a>

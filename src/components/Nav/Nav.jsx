@@ -1,59 +1,53 @@
 import React from 'react'
-import { HashLink as Link } from 'react-router-hash-link';
-
-
 import './nav.scss'
 
 export default function Nav () {
   return (
-    <nav class='navbar sticky-top navbar-expand-md '>
-      <div class='container-fluid'>
-        <div class='mx-auto order-0'>
-          <a class='navbar-brand mx-auto' href='#'>
-            Faith P Johnson
-          </a>
-          <button
-            class='navbar-toggler'
-            type='button'
-            data-bs-toggle='collapse'
-            data-bs-target='.dual-collapse2'
-          >
-            <span class='navbar-toggler-icon'></span>
-          </button>
-        </div>
-        <div class='navbar-collapse collapse w-100 order-3 dual-collapse2'>
+    <nav className='navbar sticky-top navbar-expand-md'>
+      <div className='container-fluid'>
+        {/* <div className='mx-auto order-0'> */}
+        <a className='navbar-brand mb-0 h1' href='#'>
+          Faith P Johnson
+        </a>
+        {/* </div> */}
+        <button
+          type='button'
+          data-bs-toggle='collapse'
+          data-bs-target='#navbarNav'
+          className='navbar-toggler'
+          aria-controls='navbarNav'
+          aria-expanded='false'
+          aria-label='Toggle navigation'
+        >
+          <span className='navbar-toggler-icon'></span>
+        </button>
 
-          <ul class='navbar-nav ms-auto'>
-          
-          
-            <li class='nav-item'>
-              <a class='nav-link' href='#'>
+        <div className='navbar-collapse collapse' id='navbarNav'>
+          <ul className='navbar-nav ms-auto'>
+            <li className='nav-item'>
+              <a className='nav-link' href='#'>
                 Home
               </a>
             </li>
-          
-          
-            <li class='nav-item'>
-              <a class='nav-link' href='#about'>
+
+            <li className='nav-item'>
+              <a className='nav-link' href='#about'>
                 About
               </a>
             </li>
-          
-          
-            <li class='nav-item'>
-              <a class='nav-link' href='#skills'>
+
+            <li className='nav-item'>
+              <a className='nav-link' href='#skills'>
                 Skills
               </a>
             </li>
-          
-          
+
             <li class='nav-item'>
               <a class='nav-link' href='#work'>
-                Work
+                Projects
               </a>
             </li>
-           
-           
+
             <li class='nav-item'>
               <a class='nav-link' href='#contact'>
                 Contact

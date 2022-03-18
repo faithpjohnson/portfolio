@@ -2,8 +2,34 @@
 
 #work {
     background-color: #7689D7;
+
+    .projects-section {
+        .projects-title {}
+
+        .project {
+            .content-column {}
+            .image-column {}
+        }
+
+    }
 }
 
 .projects-title {
     color: white;
 }
+
+// @include media-breakpoint-up(sm) {
+//     #work {
+//         .projects-section {
+//             .projects-title {}
+    
+//             .project {
+//                 .content-column {}
+//                 .image-column {
+//                     // order: -1 !important;
+//                 }
+//             }
+    
+//         }
+//     }
+// }

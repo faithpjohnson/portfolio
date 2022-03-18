@@ -1,40 +1,44 @@
 import React from 'react'
 import './ZRow.scss'
+import Container from 'react-bootstrap/Container'
+import Row from 'react-bootstrap/Row'
+import Col from 'react-bootstrap/Col'
+import Button from 'react-bootstrap/Button'
 
 export default function ZRow ({ project, imageAlign }) {
-  function calculateImageClass (classes) {
-    if (imageAlign === 'right') {
-      return `${classes} order-last`
+  function calculateImgColumn () {
+    const defaultSettings = {
+      span: 6
     }
 
-    return `${classes} order-first`
+    if (imageAlign === 'right') {
+      defaultSettings.order = 'last'
+    } else {
+      defaultSettings.order = 'first'
+    }
+
+    return defaultSettings
   }
 
   return (
-    <div className='project container row'>
-      <div className='content-column col-md-6'>
-        <h3 className='title'>{project.title}</h3>
-        <p className='description'>{project.description}</p>
-        <p className='techstack'>{project.techstack}</p>
-        <a
-          href={project.deployLink}
-          target='_blank'
-          className='btn btn-default project'
-        >
-          View {project.title}
-        </a>
-        <a
-          href={project.githubLink}
-          target='_blank'
-          className='btn btn-default'
-          type='button'
-        >
-          View GitHub Repo
-        </a>
-      </div>
-      <div className={calculateImageClass('col-md-6')} id='project-img'>
-        <img src={project.imageSource} className='img-fluid' />
-      </div>
-    </div>
+    <Container>
+      <Row className='py-5' id='project-img'>
+        <Col md={calculateImgColumn()}>
+          <img src={project.imageSource} className='img-fluid' />
+        </Col>
+
+        <Col md={6}>
+          <h3 className='title'>{project.title}</h3>
+          <p className='description'>{project.description}</p>
+          <p className='techstack'>{project.techstack}</p>
+          <Button href={project.deployLink} target='_blank'>
+            Launch {project.title}
+          </Button>
+          <Button href={project.githubLink} target='_blank'>
+            View GitHub Repo
+          </Button>
+        </Col>
+      </Row>
+    </Container>
   )
 }

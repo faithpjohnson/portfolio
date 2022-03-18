@@ -1,6 +1,9 @@
 import React, { useState } from 'react'
 import ZRow from '../ZRow/ZRow'
 import './work.scss'
+import Container from 'react-bootstrap/Container'
+import Row from 'react-bootstrap/Row'
+import Col from 'react-bootstrap/Col'
 
 export default function Projects () {
   const [projects, setProjects] = useState([
@@ -47,16 +50,15 @@ export default function Projects () {
 
   return (
     <div id='work'>
-      <div className='projects-section container py-5'>
+      <Container className='py-5'>
         <h5 className='section-header projects-title'>PROJECTS</h5>
         {projects.map((project, index) => {
-          console.log(index, project)
-          const align = index % 2 == 1 ? 'left' : 'right'
+          const align = index % 2 === 1 ? 'left' : 'right'
 
           return <ZRow project={project} imageAlign={align} />
         })}
         <hr />
-      </div>
+      </Container>
     </div>
   )
 }

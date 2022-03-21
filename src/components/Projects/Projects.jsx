@@ -13,8 +13,8 @@ export default function Projects () {
         'For sharing plant sightings  with your community. This app includes the ability to create a profile, login as the user, comment on others sightings, and view, edit, and delete your own sightings. Upon logging in, you can add a sighting by uploading a photo, location, and adding a description.',
       techstack:
         'Technologies used: HTML, CSS, JS. React, Node, MongoDB, Express,  Semantic UI',
-      deployLink: 'https://secure-falls-04384.herokuapp.com/login',
-      githubLink: 'https://github.com/faypayjay/project-4',
+      deployLink: 'https://plantopiaa.herokuapp.com/login',
+      githubLink: 'https://github.com/faithpjohnson/plantopia',
       imageSource: 'https://i.imgur.com/aBnO3N7.png'
     },
     {
@@ -24,7 +24,7 @@ export default function Projects () {
       techstack:
         'Technologies used: HTML, CSS, JS, Python, Django, PostgreSQL, AWS, Google Maps API, Materialize',
       deployLink: 'https://routefind.herokuapp.com/about/',
-      githubLink: 'https://github.com/faypayjay/project3',
+      githubLink: 'https://github.com/faithpjohnson/project3',
       imageSource: 'https://i.imgur.com/xFWDl0n.png'
     },
     {
@@ -33,8 +33,8 @@ export default function Projects () {
         'A place to create and share your favorite herbal recipes. After logging in using Google Authentication, the user can create, share, and comment on recipes. If the recipe belongs to the user, they can edit and delete the recipe.',
       techstack:
         'Technologies used: HTML, CSS, JS, MongoDB, Express, Node, EJS,  Materialize, Google OAuth',
-      deployLink: 'http://mighty-hollows-31782.herokuapp.com/',
-      githubLink: 'https://github.com/faypayjay/Project-2',
+      deployLink: 'https://herb-share.herokuapp.com/',
+      githubLink: 'https://github.com/faithpjohnson/herb-share',
       imageSource: 'https://i.imgur.com/HUrwD7f.png'
     },
     {
@@ -43,7 +43,7 @@ export default function Projects () {
         'A browser based game developed using JavaScript, HTML, CSS and MVC framework.',
       techstack: 'Technologies used: HTML, CSS, JS',
       deployLink: 'https://faypayjay.github.io/war-card-game/',
-      githubLink: 'https://github.com/faypayjay/war-card-game',
+      githubLink: 'https://github.com/faithpjohnson/war-card-game',
       imageSource: 'https://i.imgur.com/muzVRJn.png'
     }
   ])

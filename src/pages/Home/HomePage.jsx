@@ -3,8 +3,8 @@ import BasicPage from '../../components/BasicPage/BasicPage'
 import Home from '../../components/Home/Home'
 import About from '../../components/About/About'
 import Skills from '../../components/Skills/Skills'
-import Work from '../../components/Work/Work'
 import Contact from '../../components/Contact/Contact'
+import Projects from '../../components/Projects/Projects'
 
 export default function HomePage (props) {
   return (
@@ -12,7 +12,7 @@ export default function HomePage (props) {
       <Home />
       <About />
       <Skills />
-      <Work />
+      <Projects />
       <Contact />
     </BasicPage>
   )

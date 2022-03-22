@@ -31,10 +31,10 @@ export default function ZRow ({ project, imageAlign }) {
           <h3 className='title'>{project.title}</h3>
           <p className='description'>{project.description}</p>
           <p className='techstack'>{project.techstack}</p>
-          <Button href={project.deployLink} target='_blank'>
+          <Button className='button-style' href={project.deployLink} target='_blank'>
             Launch {project.title}
           </Button>
-          <Button href={project.githubLink} target='_blank'>
+          <Button className='button-style' href={project.githubLink} target='_blank'>
             View GitHub Repo
           </Button>
         </Col>

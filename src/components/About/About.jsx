@@ -26,12 +26,12 @@ export default function About () {
             </h4>
             <p className='about-info'>
               My coding journey began with a course at{' '}
-              <a href='https://www.shecodes.io/' target='_blank'>
+              <a className='links' href='https://www.shecodes.io/' target='_blank'>
                 SheCodes
               </a>{' '}
               that left me wanting to learn more. After more self study, I
               participated in a Software Engineering Immersive at{' '}
-              <a href='https://generalassemb.ly/' target='_blank'>
+              <a className='links' href='https://generalassemb.ly/' target='_blank'>
                 General Assembly
               </a>
               . Through this process I was able to refine my skills in problem
@@ -44,6 +44,7 @@ export default function About () {
               I'm looking currently looking for role where I can apply my
               knowledge and continue to advance my skills.
               <a
+                className='links'
                 href='https://docs.google.com/document/d/1TDgr439dOiAjreppirh6r8nAOYsbaNqIvg4f9ltneWM/export?format=pdf'
                 target='_blank'
               >
@@ -58,7 +59,9 @@ export default function About () {
             <Button
               href='mailto:faithpjohnson@gmail.com?subject=MessageToFaith'
               target='_blank'
-            >Get in Touch</Button>
+            >
+              Get in Touch
+            </Button>
           </Col>
         </Row>
       </Container>

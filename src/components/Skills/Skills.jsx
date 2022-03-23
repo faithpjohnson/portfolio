@@ -45,14 +45,17 @@ export default function Skills (props) {
               These are the skills and technologies I use to bring projects to
               life:
             </p>
-
-            {iconList.map(iconName => {
-              return (
-                <>
-                  <DevIcon icon={iconName} style={devIconStyle} />
-                </>
-              )
-            })}
+            <Row>
+              {iconList.map(iconName => {
+                return (
+                  <>
+                    <Col xs={2} md={1} lg={1}>
+                      <DevIcon icon={iconName} style={devIconStyle} />
+                    </Col>
+                  </>
+                )
+              })}
+            </Row>
           </Col>
         </Row>
       </Container>

@@ -12,7 +12,6 @@ export default function About () {
         <Row className='py-5'>
           <Col md={6}>
             <h5 className='about-title section-header'>ABOUT</h5>
-            <h4>Who is Faith?</h4>
             <img
               className='profile-pic'
               src='https://i.imgur.com/6dzYup4.jpg'
@@ -22,27 +21,37 @@ export default function About () {
 
           <Col md={6}>
             <h4 className='headline'>
-              I'm an eager Junior Developer looking to grow my skills!
+              I'm an eager Junior Developer with an analytical and driven
+              mindset.
             </h4>
             <p className='about-info'>
               My coding journey began with a course at{' '}
-              <a className='links' href='https://www.shecodes.io/' target='_blank'>
+              <a
+                className='links'
+                href='https://www.shecodes.io/'
+                target='_blank'
+              >
                 SheCodes
               </a>{' '}
-              that left me wanting to learn more. After more self study, I
+              that left me wanting to learn more. After further self-study, I
               participated in a Software Engineering Immersive at{' '}
-              <a className='links' href='https://generalassemb.ly/' target='_blank'>
+              <a
+                className='links'
+                href='https://generalassemb.ly/'
+                target='_blank'
+              >
                 General Assembly
               </a>
-              . Through this process I was able to refine my skills in problem
-              solving, time management, and creativity. I discovered my passion
-              for bringing both the technical and visual aspects of applications
-              to life. User experience and writing clean code are important to
-              me. Details matter!
+              . Through this process, I was able to refine my skills in problem
+              solving, time management, and collaboration. I discovered my
+              passion for bringing both technical and visual aspects of
+              applications to life. User experience and writing clean code are
+              important to me. <u>Details matter!</u>
             </p>
             <p>
-              I'm looking currently looking for role where I can apply my
-              knowledge and continue to advance my skills.
+              I'm currently looking for role where I can apply my knowledge and
+              continue to advance my skills.
+              <br />
               <a
                 className='links'
                 href='https://docs.google.com/document/d/1TDgr439dOiAjreppirh6r8nAOYsbaNqIvg4f9ltneWM/export?format=pdf'
@@ -53,7 +62,7 @@ export default function About () {
             </p>
             <p>
               When I’m not coding, I enjoy learning about plants, mountain
-              biking, playing with dogs, and cooking!
+              biking, hanging with my pup, and trying new recipes!
             </p>
 
             <Button

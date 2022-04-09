@@ -46,7 +46,7 @@ export default function About () {
               solving, time management, and collaboration. I discovered my
               passion for bringing both technical and visual aspects of
               applications to life. User experience and writing clean code are
-              important to me. <u>Details matter!</u>
+              important to me. <strong>Details matter!</strong>
             </p>
             <p>
               I'm currently looking for role where I can apply my knowledge and

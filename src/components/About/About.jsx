@@ -62,7 +62,7 @@ export default function About () {
             </p>
             <p>
               When I’m not coding, I enjoy learning about plants, mountain
-              biking, hanging with my pup, and trying new recipes!
+              biking, spending time with my pup, and trying new recipes!
             </p>
 
             <Button

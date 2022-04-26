@@ -18,7 +18,7 @@ export default function NavBar () {
         <Navbar.Collapse id="basic-navbar-nav">
 
         <Nav>
-          <Nav.Link href='#'>Home</Nav.Link>
+          <Nav.Link href='#home'>Home</Nav.Link>
           <Nav.Link href='#about'>About</Nav.Link>
           <Nav.Link href='#skills'>Skills</Nav.Link>
           <Nav.Link href='#work'>Projects</Nav.Link>

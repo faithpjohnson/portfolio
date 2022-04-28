@@ -3,8 +3,11 @@
 
 #about {
     background-color: #F5E6E0;
-}
 
+    .links {
+        color: black;
+    }    
+}
 
 .section-header {
     font-family: 'Encode Sans SC', sans-serif;
@@ -31,8 +34,4 @@ a.btn {
     font-size: 15px;
     border-color: #A1EACD;
     margin: 5px;
-}
-
-.links {
-    color: black;
 }

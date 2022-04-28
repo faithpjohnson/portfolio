@@ -6,12 +6,14 @@ import Col from 'react-bootstrap/Col'
 import Button from 'react-bootstrap/Button'
 
 export default function About () {
+  
   return (
     <div id='about'>
       <Container>
         <Row className='py-5'>
-          <Col md={6}>
-            <h5 className='about-title section-header'>ABOUT</h5>
+        <h5 className='about-title section-header'>ABOUT</h5>
+          <Col md={4}>
+        
             <img
               className='profile-pic'
               src='https://i.imgur.com/6dzYup4.jpg'
@@ -19,7 +21,7 @@ export default function About () {
             />
           </Col>
 
-          <Col md={6}>
+          <Col md={8}>
             <h4 className='headline'>
               I'm an eager Junior Developer with an analytical and driven
               mindset.
@@ -34,7 +36,7 @@ export default function About () {
                 SheCodes
               </a>{' '}
               that left me wanting to learn more. After further self-study, I
-              participated in a Software Engineering Immersive at{' '}
+              participated in a Software Engineering Program at{' '}
               <a
                 className='links'
                 href='https://generalassemb.ly/'

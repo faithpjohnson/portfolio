@@ -6,14 +6,12 @@ import Col from 'react-bootstrap/Col'
 import Button from 'react-bootstrap/Button'
 
 export default function About () {
-  
   return (
     <div id='about'>
       <Container>
         <Row className='py-5'>
-        <h5 className='about-title section-header'>ABOUT</h5>
+          <h5 className='about-title section-header'>ABOUT</h5>
           <Col md={4}>
-        
             <img
               className='profile-pic'
               src='https://i.imgur.com/6dzYup4.jpg'
@@ -23,8 +21,7 @@ export default function About () {
 
           <Col md={8}>
             <h4 className='headline'>
-              I'm an eager Junior Developer with an analytical and driven
-              mindset.
+              I'm an eager Web Dev with an analytical and driven mindset.
             </h4>
             <p className='about-info'>
               My coding journey began with a course at{' '}
@@ -51,18 +48,6 @@ export default function About () {
               important to me. <strong>Details matter!</strong>
             </p>
             <p>
-              I'm currently looking for role where I can apply my knowledge and
-              continue to advance my skills.
-              <br />
-              <a
-                className='links'
-                href='https://docs.google.com/document/d/1vltqiAg6vhZKSEsEgwpg5OMzu_3gFVQvUHAt6qdwojA/export?format=pdf'
-                target='_blank'
-              >
-                Download Resume{' '}
-              </a>
-            </p>
-            <p>
               When I’m not coding, I enjoy learning about plants, mountain
               biking, spending time with my pup, and trying new recipes!
             </p>
@@ -79,4 +64,3 @@ export default function About () {
     </div>
   )
 }
-

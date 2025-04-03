@@ -1,24 +1,126 @@
 @import '../../variables.scss';
 
-#work {
-    background-color: #7689D7;
+#projects {
+    background-color: #2d2d2d;
+    color: #ffffff;
+    padding: 4rem 0;
 
-    .projects-section {
-        .projects-title {}
+    .projects-title {
+        color: #ffffff;
+        font-size: 1.5rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        margin-bottom: 2rem;
+    }
 
-        .project {
-            .content-column {}
-            .image-column {}
+    .project-card {
+        background-color: #1a1a1a;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+        margin-bottom: 2rem;
+
+        &:hover {
+            transform: translateY(-5px);
         }
 
+        .project-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .project-content {
+            padding: 1.5rem;
+
+            h3 {
+                color: #ffffff;
+                font-size: 1.25rem;
+                font-weight: 600;
+                margin-bottom: 1rem;
+            }
+
+            p {
+                color: #e0e0e0;
+                font-size: 1rem;
+                line-height: 1.6;
+                margin-bottom: 1.5rem;
+            }
+
+            .project-links {
+                display: flex;
+                gap: 2rem;
+
+                a {
+                    color: #64ffda;
+                    text-decoration: none;
+                    font-weight: 500;
+                    transition: color 0.3s ease;
+                    display: flex;
+                    align-items: center;
+                    gap: 0.5rem;
+                    padding: 0.5rem 1rem;
+                    border-radius: 4px;
+                    background-color: rgba(100, 255, 218, 0.1);
+
+                    &:hover {
+                        color: #9effeb;
+                        background-color: rgba(100, 255, 218, 0.2);
+                    }
+
+                    svg {
+                        width: 16px;
+                        height: 16px;
+                    }
+                }
+            }
+        }
     }
 }
 
-.projects-title {
-    color: white;
+@media (max-width: 768px) {
+    #projects {
+        padding: 2rem 0;
+
+        .projects-title {
+            font-size: 1.25rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .project-card {
+            margin-bottom: 1.5rem;
+
+            .project-image {
+                height: 180px;
+            }
+
+            .project-content {
+                padding: 1.25rem;
+
+                h3 {
+                    font-size: 1.1rem;
+                    margin-bottom: 0.75rem;
+                }
+
+                p {
+                    font-size: 0.9rem;
+                    margin-bottom: 1rem;
+                }
+
+                .project-links {
+                    gap: 1rem;
+                    
+                    a {
+                        padding: 0.4rem 0.8rem;
+                        font-size: 0.9rem;
+                    }
+                }
+            }
+        }
+    }
 }
-
-
 
 // @include media-breakpoint-up(sm) {
 //     #work {

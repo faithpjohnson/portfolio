@@ -24,19 +24,21 @@ export default function ZRow ({ project, imageAlign }) {
     <Container>
       <Row className='py-5' id='project-img'>
         <Col md={calculateImgColumn()}>
-          <img src={project.imageSource} className='img-fluid' />
+          <img src={project.imageSource} className='img-fluid' alt={`${project.title} screenshot`} />
         </Col>
 
         <Col md={6}>
           <h3 className='title'>{project.title}</h3>
           <p className='description'>{project.description}</p>
           <p className='techstack'>{project.techstack}</p>
-          <Button className='button-style' href={project.deployLink} target='_blank'>
-            Launch {project.title}
-          </Button>
-          <Button className='button-style' href={project.githubLink} target='_blank'>
-            View GitHub Repo
-          </Button>
+          <div className="project-buttons">
+            <Button className='button-style me-3' href={project.deployLink} target='_blank'>
+              Launch {project.title}
+            </Button>
+            <Button className='button-style' href={project.githubLink} target='_blank'>
+              View GitHub Repo
+            </Button>
+          </div>
         </Col>
       </Row>
     </Container>

@@ -1,2 +1,124 @@
 @import '../node_modules/bootstrap/scss/bootstrap.scss';
 @import "~bootstrap/scss/bootstrap";
+@import "variables";
+
+// Global Styles
+body {
+  background-color: $dark-bg;
+  color: $text-primary;
+  min-height: 100vh;
+}
+
+// Card Styles
+.card {
+  background-color: $card-bg;
+  border: none;
+  border-radius: $border-radius-md;
+  box-shadow: $shadow-sm;
+  transition: $transition-normal;
+  
+  &:hover {
+    background-color: $card-hover;
+    box-shadow: $shadow-md;
+  }
+}
+
+// Button Styles
+.btn {
+  border-radius: $border-radius-sm;
+  transition: $transition-normal;
+  padding: $spacing-sm $spacing-md;
+  
+  &.btn-primary {
+    background-color: $button-primary;
+    border-color: $button-primary;
+    
+    &:hover {
+      background-color: darken($button-primary, 10%);
+      border-color: darken($button-primary, 10%);
+    }
+  }
+  
+  &.btn-secondary {
+    background-color: $button-secondary;
+    border-color: $button-secondary;
+    
+    &:hover {
+      background-color: darken($button-secondary, 10%);
+      border-color: darken($button-secondary, 10%);
+    }
+  }
+}
+
+// Link Styles
+a {
+  color: $link-color;
+  text-decoration: none;
+  transition: $transition-normal;
+  
+  &:hover {
+    color: $link-hover-color;
+    text-decoration: none;
+  }
+}
+
+// Navigation
+.navbar {
+  background-color: $dark-surface;
+  box-shadow: $shadow-sm;
+  
+  .navbar-brand, .nav-link {
+    color: $text-primary;
+    
+    &:hover {
+      color: $accent-primary;
+    }
+  }
+}
+
+// Section Headers
+.section-header {
+  margin-bottom: $spacing-xl;
+  
+  h2 {
+    color: $text-primary;
+    margin-bottom: $spacing-sm;
+  }
+  
+  p {
+    color: $text-secondary;
+  }
+}
+
+// Form Elements
+.form-control {
+  background-color: $dark-surface;
+  border: 1px solid $text-muted;
+  color: $text-primary;
+  border-radius: $border-radius-sm;
+  
+  &:focus {
+    background-color: $dark-surface-hover;
+    border-color: $accent-primary;
+    color: $text-primary;
+    box-shadow: 0 0 0 0.2rem rgba($accent-primary, 0.25);
+  }
+}
+
+// Custom Scrollbar
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: $dark-surface;
+}
+
+::-webkit-scrollbar-thumb {
+  background: $text-muted;
+  border-radius: 4px;
+  
+  &:hover {
+    background: $text-secondary;
+  }
+}

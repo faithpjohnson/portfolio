@@ -19,9 +19,81 @@
 //     // padding-top: 65px;
 // }
 
-// #project-img {
-//     // padding-top: 50px;
-// }
+#project-img {
+  .title {
+    color: #ffffff;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+
+  .description {
+    color: #e0e0e0;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+  }
+
+  .techstack {
+    color: #e0e0e0;
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .project-buttons {
+    display: flex;
+    gap: 1rem;
+
+    .button-style {
+      background-color: #2d2d2d;
+      color: #ffffff;
+      border: none;
+      padding: 0.75rem 1.5rem;
+      border-radius: 8px;
+      font-weight: 500;
+      transition: all 0.3s ease;
+
+      &:hover {
+        background-color: #3d3d3d;
+        transform: translateY(-2px);
+      }
+    }
+  }
+
+  img {
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+}
+
+@media (max-width: 768px) {
+  #project-img {
+    .title {
+      font-size: 1.25rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .description {
+      font-size: 0.9rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .techstack {
+      font-size: 0.8rem;
+      margin-bottom: 1rem;
+    }
+
+    .project-buttons {
+      gap: 0.75rem;
+      flex-wrap: wrap;
+
+      .button-style {
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+      }
+    }
+  }
+}
 
 .title {
     color: #EEB4AA;

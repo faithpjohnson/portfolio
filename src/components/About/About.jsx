@@ -15,7 +15,7 @@ export default function About () {
             <img
               className='profile-pic'
               src='https://i.imgur.com/6dzYup4.jpg'
-              alt='picture of Faith'
+              alt='Faith'
             />
           </Col>
 
@@ -29,6 +29,7 @@ export default function About () {
                 className='links'
                 href='https://www.shecodes.io/'
                 target='_blank'
+                rel="noreferrer"
               >
                 SheCodes
               </a>{' '}
@@ -38,6 +39,7 @@ export default function About () {
                 className='links'
                 href='https://generalassemb.ly/'
                 target='_blank'
+                rel="noreferrer"
               >
                 General Assembly
               </a>
@@ -48,7 +50,7 @@ export default function About () {
               important to me. <strong>Details matter!</strong>
             </p>
             <p>
-              When I’m not coding, I enjoy learning about plants, mountain
+              When I'm not coding, I enjoy learning about plants, mountain
               biking, spending time with my pup, and trying new recipes!
             </p>
 

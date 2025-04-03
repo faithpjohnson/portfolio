@@ -1,70 +1,147 @@
-# Getting Started with Create React App
+# Faith's Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A responsive portfolio website built with React, Bootstrap, and SASS.
 
-## Available Scripts
+## Getting Started
 
-In the project directory, you can run:
+### Prerequisites
 
-### `npm start`
+- Node.js (>= 14.x)
+- npm or yarn
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Installation
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+1. Clone the repository
+   ```
+   git clone https://github.com/faithpjohnson/portfolio.git
+   cd portfolio
+   ```
 
-### `npm test`
+2. Install dependencies
+   ```
+   npm install
+   ```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+3. Start the development server
+   ```
+   npm start
+   ```
 
-### `npm run build`
+4. Build for production
+   ```
+   npm run build
+   ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Project Structure
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```
+src/
+├── components/         # All React components
+│   ├── About/          # About section
+│   ├── Contact/        # Contact section
+│   ├── Projects/       # Projects section
+│   ├── Skills/         # Skills section
+│   ├── UI/             # Reusable UI components
+│   ├── ZRow/           # Project row component
+│   └── ...
+├── data/               # Data files
+│   └── projects.js     # Projects data
+├── styles/             # Global styles
+│   └── theme.scss      # Theme variables and mixins
+├── App.jsx             # Main App component
+└── index.jsx           # Entry point
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Reusable Components
 
-### `npm run eject`
+### UI Components
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+#### SectionHeader
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```jsx
+import SectionHeader from './components/UI/SectionHeader';
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+// Usage
+<SectionHeader title="PROJECTS" />
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+#### Button
 
-## Learn More
+```jsx
+import Button from './components/UI/Button';
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+// Usage as button
+<Button variant="primary" size="md" onClick={handleClick}>
+  Click Me
+</Button>
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+// Usage as link
+<Button 
+  variant="secondary" 
+  size="lg" 
+  href="https://example.com" 
+  external={true}
+  ariaLabel="Visit example site"
+>
+  Visit Site
+</Button>
+```
 
-### Code Splitting
+### Theming System
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+The project uses CSS Custom Properties for easy theming. All variables are defined in `src/styles/theme.scss`.
 
-### Analyzing the Bundle Size
+Example usage:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+```scss
+.my-component {
+  background-color: var(--color-dark-bg-primary);
+  color: var(--color-text-primary);
+  padding: var(--spacing-md);
+  font-size: var(--font-size-md);
+}
+```
 
-### Making a Progressive Web App
+## Adding New Projects
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+To add a new project:
 
-### Advanced Configuration
+1. Edit the `src/data/projects.js` file and add your new project:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+```javascript
+export const projects = [
+  // ... existing projects
+  {
+    title: 'New Project',
+    description: 'Description of the new project',
+    techstack: 'Technologies used: HTML, CSS, JS, etc.',
+    deployLink: 'https://your-project-url.com',
+    githubLink: 'https://github.com/yourusername/your-project',
+    imageSource: 'https://path-to-your-image.jpg'
+  }
+];
+```
 
-### Deployment
+## Contributing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+1. Create a new branch for your feature
+   ```
+   git checkout -b feature/your-feature-name
+   ```
 
-### `npm run build` fails to minify
+2. Make your changes and commit them
+   ```
+   git add .
+   git commit -m "Add new feature"
+   ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+3. Push to the branch
+   ```
+   git push origin feature/your-feature-name
+   ```
+
+4. Open a pull request
+
+## License
+
+This project is open source and available under the [MIT License](LICENSE).

@@ -1,0 +1,111 @@
+// Theme variables using CSS custom properties for easy theme switching
+
+:root {
+  // Base colors
+  --color-dark-bg-primary: #1a1a1a;
+  --color-dark-bg-secondary: #2d2d2d;
+  --color-dark-bg-tertiary: #3d3d3d;
+  
+  // Text colors
+  --color-text-primary: #ffffff;
+  --color-text-secondary: #e0e0e0;
+  
+  // Accent colors
+  --color-accent-primary: #64ffda;
+  --color-accent-primary-hover: #9effeb;
+  --color-accent-secondary: rgba(100, 255, 218, 0.1);
+  --color-accent-secondary-hover: rgba(100, 255, 218, 0.2);
+  
+  // Spacing
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 0.75rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 1.5rem;
+  --spacing-xl: 2rem;
+  --spacing-xxl: 4rem;
+  
+  // Typography
+  --font-size-xs: 0.8rem;
+  --font-size-sm: 0.9rem;
+  --font-size-md: 1rem;
+  --font-size-lg: 1.1rem;
+  --font-size-xl: 1.25rem;
+  --font-size-xxl: 1.5rem;
+  --font-size-hero: 1.75rem;
+  
+  // Border radius
+  --border-radius-sm: 4px;
+  --border-radius-md: 8px;
+  --border-radius-lg: 12px;
+  
+  // Shadows
+  --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.1);
+  --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 8px 16px rgba(0, 0, 0, 0.1);
+  
+  // Transitions
+  --transition-fast: all 0.2s ease;
+  --transition-normal: all 0.3s ease;
+  --transition-slow: all 0.5s ease;
+}
+
+// Animation keyframes for common effects
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { transform: translateY(20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+// Mixins for common patterns
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin card-style {
+  background-color: var(--color-dark-bg-secondary);
+  border-radius: var(--border-radius-md);
+  box-shadow: var(--shadow-md);
+  overflow: hidden;
+}
+
+@mixin section-padding {
+  padding: var(--spacing-xxl) 0;
+  
+  @media (max-width: 768px) {
+    padding: var(--spacing-xl) 0;
+  }
+}
+
+@mixin hover-lift {
+  transition: var(--transition-normal);
+  
+  &:hover {
+    transform: translateY(-2px);
+  }
+}
+
+@mixin button-style {
+  background-color: var(--color-dark-bg-secondary);
+  color: var(--color-text-primary);
+  padding: var(--spacing-sm) var(--spacing-lg);
+  border-radius: var(--border-radius-md);
+  border: none;
+  font-weight: 500;
+  transition: var(--transition-normal);
+  
+  &:hover {
+    background-color: var(--color-dark-bg-tertiary);
+    transform: translateY(-2px);
+  }
+} 

@@ -13,6 +13,7 @@
     text-transform: uppercase;
     letter-spacing: 2px;
     margin-bottom: 2rem;
+    font-family: $font-primary;
 }
 
 .skills-container {
@@ -33,6 +34,7 @@
         font-size: 1.25rem;
         font-weight: 600;
         margin-bottom: 1.5rem;
+        font-family: $font-primary;
     }
 
     ul {
@@ -47,6 +49,7 @@
             display: flex;
             align-items: center;
             gap: 0.5rem;
+            font-family: $font-body;
 
             &:before {
                 content: "•";

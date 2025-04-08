@@ -21,37 +21,16 @@ export default function About () {
 
           <Col md={8}>
             <h4 className='headline'>
-              I'm an eager Web Dev with an analytical and driven mindset.
+              Hi, I'm Faith Johnson, a technical professional skilled in delivering innovative, data-driven solutions.
             </h4>
             <p className='about-info'>
-              My coding journey began with a course at{' '}
-              <a
-                className='links'
-                href='https://www.shecodes.io/'
-                target='_blank'
-                rel="noreferrer"
-              >
-                SheCodes
-              </a>{' '}
-              that left me wanting to learn more. After further self-study, I
-              participated in a Software Engineering Program at{' '}
-              <a
-                className='links'
-                href='https://generalassemb.ly/'
-                target='_blank'
-                rel="noreferrer"
-              >
-                General Assembly
-              </a>
-              . Through this process, I was able to refine my skills in problem
-              solving, time management, and collaboration. I discovered my
-              passion for bringing both technical and visual aspects of
-              applications to life. User experience and writing clean code are
-              important to me. <strong>Details matter!</strong>
+              I specialize in platforms like Palantir Foundry, Microsoft Power Platform, and Atlassian. My experience includes building custom applications, automating complex workflows, and collaborating closely with both civilian and military teams to turn intricate data challenges into actionable insights.
             </p>
-            <p>
-              When I'm not coding, I enjoy learning about plants, mountain
-              biking, spending time with my pup, and trying new recipes!
+            <p className='about-info'>
+              Currently, I'm deepening my expertise by pursuing advanced education and certifications in cybersecurity. I'm passionate about combining my proven technical abilities with robust cybersecurity practices to ensure solutions are not only effective and efficient but also secure and resilient.
+            </p>
+            <p className='about-info'>
+              I thrive on continuous learning, creative problem-solving, and leveraging technology to drive meaningful impact. Welcome to my portfolio!
             </p>
 
             <Button

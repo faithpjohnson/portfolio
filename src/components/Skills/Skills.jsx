@@ -4,58 +4,67 @@ import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 
-import DevIcon from 'devicon-react-svg'
-
-export default function Skills (props) {
-  const iconList = [
-    'html5',
-    'css3',
-    'javascript',
-    'react',
-    'git',
-    'github_badge',
-    'bootstrap',
-    'materializecss',
-    'sass',
-    'python',
-    'django',
-    'mysql',
-    'postgresql',
-    'nodejs',
-    'mongodb',
-    'terminal',
-    'visualstudio',
-    'aws',
-    'heroku',
-    'trello'
+export default function Skills () {
+  const skillCategories = [
+    {
+      title: 'Platforms & Tools',
+      skills: [
+        'Palantir Foundry',
+        'Microsoft Power Platform (Power BI, Power Automate, Power Apps)',
+        'Atlassian (Jira, Confluence)',
+        'Azure / Cloud Tools'
+      ]
+    },
+    {
+      title: 'Cybersecurity',
+      skills: [
+        'Security Fundamentals',
+        'Risk Assessment & Management',
+        'Vulnerability Analysis',
+        'Secure Development Practices',
+        'Compliance & Governance Frameworks (NIST, ISO, etc.)'
+      ]
+    },
+    {
+      title: 'Technical Skills',
+      skills: [
+        'Data Analysis & Visualization',
+        'Workflow Automation',
+        'Application Development',
+        'API Integration',
+        'Process Optimization'
+      ]
+    },
+    {
+      title: 'Professional Skills',
+      skills: [
+        'Cross-functional Collaboration',
+        'Agile Methodologies',
+        'Project Management',
+        'Problem-solving',
+        'Technical Documentation'
+      ]
+    }
   ]
-
-  const devIconStyle = {
-    height: '50px',
-    width: '50px'
-  }
 
   return (
     <div id='skills'>
       <Container>
         <Row className='py-5'>
-          <Col lg={true}>
+          <Col lg={12}>
             <h5 className='section-header skills-title'>SKILLS</h5>
-            <p>
-              These are the skills and technologies I use to bring projects to
-              life:
-            </p>
-            <Row>
-              {iconList.map(iconName => {
-                return (
-                  <>
-                    <Col xs={2} md={1} lg={1}>
-                      <DevIcon icon={iconName} style={devIconStyle} />
-                    </Col>
-                  </>
-                )
-              })}
-            </Row>
+            <div className='skills-container'>
+              {skillCategories.map((category, index) => (
+                <div key={index} className='skill-category'>
+                  <h3>{category.title}</h3>
+                  <ul>
+                    {category.skills.map((skill, skillIndex) => (
+                      <li key={skillIndex}>{skill}</li>
+                    ))}
+                  </ul>
+                </div>
+              ))}
+            </div>
           </Col>
         </Row>
       </Container>

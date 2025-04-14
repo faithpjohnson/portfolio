@@ -1,41 +1,52 @@
 export const projects = [
   {
-    title: 'Plantopia',
+    title: 'Agile Digital Mission Assurance Implementation',
     description:
-      'For sharing plant sightings with your community. This app includes the ability to create a profile, login as the user, comment on others sightings, and view, edit, and delete your own sightings. Upon logging in, you can add a sighting by uploading a photo, location, and adding a description.',
-    techstack:
-      'Technologies used: HTML, CSS, JS, React, Node, MongoDB, Express, Semantic UI',
-    deployLink: 'https://plantopiaa.herokuapp.com/login',
-    githubLink: 'https://github.com/faithpjohnson/plantopia',
-    imageSource: 'https://i.imgur.com/aBnO3N7.png'
+      'Implemented agile-driven mission assurance solutions in a digital workspace to enhance operational efficiency and reliability. Developed centralized data repositories and custom analytical applications within Palantir Foundry, streamlining hardware lifecycle management and providing intuitive platforms for trend analysis, data filtering, and comparative assessments. Created reusable mission task templates in Jira for structured tracking of deliverables and anomalies, while integrating with Confluence and Mattermost for comprehensive statistical overviews and efficient real-time collaboration.',
+    techstack: [
+      'Palantir Foundry',
+      'Jira',
+      'Confluence',
+      'Mattermost'
+    ],
+    imageSource: '/images/projects/mission-assurance.jpg'
   },
   {
-    title: 'Route Creator',
+    title: 'Spaceport Transportation Scheduling Tool',
     description:
-      'An app for creating your own custom-made running or biking routes, and displaying them for others to see. After a user creates an account and logs in, they can create routes, search for routes, add routes to favorites, leave comments, and edit/delete their personal routes. This app was created by a team of 4, using the mob programming approach.',
-    techstack:
-      'Technologies used: HTML, CSS, JS, Python, Django, PostgreSQL, AWS, Google Maps API, Materialize',
-    deployLink: 'https://routefind.herokuapp.com/about/',
-    githubLink: 'https://github.com/faithpjohnson/project3',
-    imageSource: 'https://i.imgur.com/xFWDl0n.png'
+      'Developed a secure, streamlined scheduling solution enabling commercial launch service providers to submit and manage transportation requests efficiently. Customized Microsoft Forms for secure request submission, employed SharePoint as a central hub with Microsoft Lists for dynamic data management, and leveraged Power Automate to automate critical workflows. Created automated, real-time dashboards and reports using Power BI, greatly enhancing leadership visibility and operational efficiency.',
+    techstack: [
+      'Microsoft SharePoint',
+      'Microsoft Forms',
+      'Microsoft Lists',
+      'Power Automate',
+      'Power BI'
+    ],
+    imageSource: '/images/projects/spaceport-scheduling.jpg'
   },
   {
-    title: 'Herb Share',
+    title: 'Common Operating Picture (COP) Feedback Pipeline',
     description:
-      'A place to create and share your favorite herbal recipes. After logging in using Google Authentication, the user can create, share, and comment on recipes. If the recipe belongs to the user, they can edit and delete the recipe.',
-    techstack:
-      'Technologies used: HTML, CSS, JS, MongoDB, Express, Node, EJS, Materialize, Google OAuth',
-    deployLink: 'https://herb-share.herokuapp.com/',
-    githubLink: 'https://github.com/faithpjohnson/herb-share',
-    imageSource: 'https://i.imgur.com/HUrwD7f.png'
+      'Designed and implemented a structured feedback pipeline to support the pre-discovery phase of developing a Common Operating Picture (COP). Developed customized forms using Microsoft Forms to efficiently capture user insights, utilized SharePoint and Microsoft Lists for centralized data storage, and leveraged Power Automate to streamline data processing and validation. Created automated, interactive dashboards using Power BI to effectively visualize and communicate feedback results, aiding in strategic decision-making.',
+    techstack: [
+      'Microsoft SharePoint',
+      'Microsoft Forms',
+      'Microsoft Lists',
+      'Power Automate',
+      'Power BI'
+    ],
+    imageSource: '/images/projects/cop-feedback.jpg'
   },
   {
-    title: 'Game of War',
+    title: 'Data Derby Hackathon: Ground Scheduling Prototype',
     description:
-      'A browser based game developed using JavaScript, HTML, CSS and MVC framework.',
-    techstack: 'Technologies used: HTML, CSS, JS',
-    deployLink: 'https://faypayjay.github.io/war-card-game/',
-    githubLink: 'https://github.com/faithpjohnson/war-card-game',
-    imageSource: 'https://i.imgur.com/muzVRJn.png'
+      'Participated in a week-long hackathon focused on developing an innovative prototype using Palantir Foundry. Our solution leveraged ground scheduling data and featured advanced functionalities, including route simulation, conflict resolution, and geospatial visualization. Innovatively utilized previously underused tool features, developed with integration and compatibility in mind, and quickly adjusted approaches based on live feedback. Recognized with the award for "Best Agility" at the conclusion of the hackathon.',
+    techstack: [
+      'Palantir Foundry',
+      'Data Visualization',
+      'Geospatial Analysis',
+      'Prototype Development'
+    ],
+    imageSource: '/images/projects/data-derby.jpg'
   }
 ]; 

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Placeholder Generator</title>
+    <style>
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #121212;
+            color: #fff;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .placeholder-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .placeholder {
+            width: 800px;
+            height: 450px;
+            border-radius: 12px;
+            overflow: hidden;
+            position: relative;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+        }
+        .placeholder-content {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .placeholder-title {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            background: linear-gradient(45deg, #00f2fe, #4facfe);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .placeholder-description {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            color: #e0e0e0;
+            max-width: 80%;
+        }
+        .placeholder-tech {
+            margin-top: 1rem;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            justify-content: center;
+        }
+        .tech-tag {
+            padding: 0.5rem 1rem;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            color: #fff;
+            font-size: 0.9rem;
+        }
+        .controls {
+            margin-bottom: 20px;
+        }
+        button {
+            padding: 0.8rem 1.5rem;
+            border-radius: 25px;
+            background: linear-gradient(45deg, #00f2fe, #4facfe);
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            font-weight: 600;
+            margin-right: 10px;
+        }
+        .mission-assurance {
+            background: linear-gradient(135deg, #1a237e, #0d47a1);
+        }
+        .spaceport-scheduling {
+            background: linear-gradient(135deg, #004d40, #00695c);
+        }
+        .cop-feedback {
+            background: linear-gradient(135deg, #311b92, #4527a0);
+        }
+        .data-derby {
+            background: linear-gradient(135deg, #b71c1c, #c62828);
+        }
+        .generic-placeholder {
+            background: linear-gradient(135deg, #263238, #37474f);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Project Placeholder Generator</h1>
+        <div class="controls">
+            <button onclick="generatePlaceholders()">Generate Placeholders</button>
+            <button onclick="downloadAll()">Download All</button>
+        </div>
+        <div class="placeholder-container">
+            <div class="placeholder mission-assurance" id="mission-assurance">
+                <div class="placeholder-content">
+                    <h2 class="placeholder-title">Agile Digital Mission Assurance</h2>
+                    <p class="placeholder-description">Digital workspace solutions for operational efficiency and reliability</p>
+                    <div class="placeholder-tech">
+                        <span class="tech-tag">Palantir Foundry</span>
+                        <span class="tech-tag">Jira</span>
+                        <span class="tech-tag">Confluence</span>
+                        <span class="tech-tag">Mattermost</span>
+                    </div>
+                </div>
+            </div>
+            <div class="placeholder spaceport-scheduling" id="spaceport-scheduling">
+                <div class="placeholder-content">
+                    <h2 class="placeholder-title">Spaceport Transportation Scheduling</h2>
+                    <p class="placeholder-description">Secure scheduling solution for launch service providers</p>
+                    <div class="placeholder-tech">
+                        <span class="tech-tag">SharePoint</span>
+                        <span class="tech-tag">Power Automate</span>
+                        <span class="tech-tag">Power BI</span>
+                    </div>
+                </div>
+            </div>
+            <div class="placeholder cop-feedback" id="cop-feedback">
+                <div class="placeholder-content">
+                    <h2 class="placeholder-title">COP Feedback Pipeline</h2>
+                    <p class="placeholder-description">Structured feedback pipeline for Common Operating Picture</p>
+                    <div class="placeholder-tech">
+                        <span class="tech-tag">Microsoft Forms</span>
+                        <span class="tech-tag">SharePoint</span>
+                        <span class="tech-tag">Power BI</span>
+                    </div>
+                </div>
+            </div>
+            <div class="placeholder data-derby" id="data-derby">
+                <div class="placeholder-content">
+                    <h2 class="placeholder-title">Data Derby Hackathon</h2>
+                    <p class="placeholder-description">Ground scheduling prototype with advanced functionalities</p>
+                    <div class="placeholder-tech">
+                        <span class="tech-tag">Palantir Foundry</span>
+                        <span class="tech-tag">Data Visualization</span>
+                        <span class="tech-tag">Geospatial Analysis</span>
+                    </div>
+                </div>
+            </div>
+            <div class="placeholder generic-placeholder" id="generic-placeholder">
+                <div class="placeholder-content">
+                    <h2 class="placeholder-title">Project Preview</h2>
+                    <p class="placeholder-description">Project screenshot coming soon</p>
+                    <div class="placeholder-tech">
+                        <span class="tech-tag">Placeholder</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+    <script>
+        function generatePlaceholders() {
+            const placeholders = [
+                { id: 'mission-assurance', filename: 'mission-assurance.jpg' },
+                { id: 'spaceport-scheduling', filename: 'spaceport-scheduling.jpg' },
+                { id: 'cop-feedback', filename: 'cop-feedback.jpg' },
+                { id: 'data-derby', filename: 'data-derby.jpg' },
+                { id: 'generic-placeholder', filename: 'placeholder.jpg' }
+            ];
+
+            placeholders.forEach(placeholder => {
+                const element = document.getElementById(placeholder.id);
+                html2canvas(element, {
+                    scale: 2,
+                    backgroundColor: null
+                }).then(canvas => {
+                    const link = document.createElement('a');
+                    link.download = placeholder.filename;
+                    link.href = canvas.toDataURL('image/jpeg', 0.9);
+                    link.click();
+                });
+            });
+        }
+
+        function downloadAll() {
+            generatePlaceholders();
+        }
+    </script>
+</body>
+</html> 

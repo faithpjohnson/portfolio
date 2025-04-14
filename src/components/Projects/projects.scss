@@ -12,6 +12,15 @@
         text-transform: uppercase;
         letter-spacing: 2px;
         margin-bottom: 2rem;
+        font-family: $font-primary;
+    }
+
+    .projects-intro {
+        color: #e0e0e0;
+        font-size: 1.1rem;
+        line-height: 1.6;
+        margin-bottom: 2rem;
+        font-family: $font-body;
     }
 
     .project-card {

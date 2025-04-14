@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './pages/App/App';
-import '../src/style.scss';
+import App from './App';
+import './style.scss';
 import { BrowserRouter as Router } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 // import Nav from './components/Nav/Nav'
